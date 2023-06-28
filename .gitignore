@@ -1,0 +1,17 @@
+# .gitignore
+node_modules/
+*.log
+dist/
+.env
+
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+env/
+*.egg-info/
+*.egg
+*.so
+*.pyz
+.DS_Store

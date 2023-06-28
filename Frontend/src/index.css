@@ -1,0 +1,397 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: rgb(250, 230, 200);*/
+}
+
+.App {
+    /*display: flex;*/
+}
+
+/*---------------------------------------------------------------*/
+
+/*Navbar*/
+
+nav {
+    height: 100px;
+    background-color: rgb(221, 241, 254);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo-container, nav .controls-container {
+    /*padding: 25px 25px;*/
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+nav .logo-container img {
+    width: 75px;
+    border-radius: 35px;
+}
+
+nav .icon {
+    color: rgb(255, 117, 109);
+    padding-right: 10px;
+}
+
+.controls-container button {
+    border-radius: 10px;
+    background-color: rgb(254, 183, 101);
+    border: 1.5px solid rgb(254, 183, 101);
+    height: 22px;
+    margin: 5px;
+}
+
+.signout-button {
+    border: 1.5px solid rgb(255, 117, 109) !important;
+    background-color: rgb(255, 117, 109) !important;
+}
+
+/*---------------------------------------------------------------*/
+
+
+/*Home Page*/
+.home {
+
+}
+
+/*---------------------------------------------------------------*/
+
+
+/*Buttons*/
+
+button:hover {
+    cursor: pointer;
+}
+
+.delete-button-container {
+    width: 30px !important;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-button {
+    border: none;
+    font-size: x-large;
+    width: 10px;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}
+
+.delete-button-container:hover {
+    background-color: rgb(254, 128, 140) !important;
+
+}
+
+
+.edit-button-container {
+    width: 30px !important;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-button {
+    border: none;
+    font-size: large;
+    width: 10px;
+}
+
+.edit-button-container:hover {
+    background-color: rgb(254, 183, 101) !important;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------------*/
+
+
+/*Predictions*/
+
+.predictions-page {
+    width: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.predictions-form {
+    display: -ms-flexbox;
+}
+
+.predict-button {
+    border-radius: 10px;
+    border: 1.5px solid rgb(218, 218, 218);
+    height: 41px;
+    margin-left: 10px;
+}
+
+
+/*---------------------------------------------------------------*/
+
+
+/*Tasks*/
+
+.tasks-page {
+    padding: 20px;
+    width: 90%;
+}
+
+.tasks-top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tasks-options {
+    padding: 20px;
+    display: flex;
+}
+
+.tasks-options button {
+    margin-top: 9px;
+    /*padding-top: 50px;*/
+    height: 86px;
+    margin-left: 10px;
+}
+
+
+/*Add task*/
+
+.add-task {
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 70%;
+}
+
+.task-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.task-form input, select {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(218, 218, 218);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+/*Task Card*/
+
+.task-card {
+    display: flex;
+    height: 100px;
+}
+
+.task-card > * {
+    background-color: rgb(221, 241, 254);
+    margin: 2px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.elapsed-time {
+    display: block;
+    text-align: center;
+}
+
+.elapsed-time p {
+    margin: 0;
+    line-height: 1;
+}
+
+.prediction-card {
+    display: flex;
+    height: 100px;
+}
+
+
+/*.card-color {*/
+/*    flex-grow: 0;*/
+/*    flex-shrink: 0;*/
+/*    flex: none;*/
+/*    width: 0 !important;*/
+/*}*/
+
+
+/*---------------------------------------------------------------*/
+
+/*Clients*/
+
+.clients-page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 70%;
+}
+
+.clients-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.clients-page .add-item {
+    margin-top: 30px;
+    height: 50px;
+}
+
+
+/*Add client*/
+
+.add-client {
+    padding-top: 20px;
+    padding-left: 30px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.client-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.client-form input, select {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(218, 218, 218);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+/*Detect Logo*/
+
+.detect-logo-form {
+    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.detect-logo-form input {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(218, 218, 218);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.auto-fill {
+    border-radius: 10px;
+    border: 1.5px solid rgb(218, 218, 218);
+}
+
+.auto-fill:hover {
+    cursor: pointer;
+}
+
+
+/*Client Card*/
+
+.client-card {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.client-card > * {
+    background-color: rgb(221, 241, 254);
+    margin: 2px;
+    padding: 30px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*---------------------------------------------------------------*/
+
+/*Logos*/
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 80px !important;
+}
+
+.client-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.client-logo img {
+    height: 100%;
+    width: 100%;
+    /*object-fit: cover;*/
+}
+
+.client-form-logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.detect-logo-logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 18px;
+}
+
+/*---------------------------------------------------------------*/
+
+
+/*Login*/
+
+
+.login-form {
+    padding-top: 5%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(174, 198, 255);
+    margin: 5% auto auto;
+    border: 1px solid #000; /* Change '#000' to any color you want */
+    border-radius: 10px;
+
+}
+
+.login-form input {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(218, 218, 218);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
