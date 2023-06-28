@@ -2,9 +2,9 @@
 
 ## Installation 
 
+* Download and extract the project zip file
 ### Backend
 
-* Download and extract the project zip file
 * Navigate to the `backend` directory
 * Run `python manage.py runserver` in the terminal
 
